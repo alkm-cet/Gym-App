@@ -1,0 +1,247 @@
+.Mystats {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* background-image: linear-gradient(326deg, #FF8489 0%, #D5ADC8 74%); */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/522/604/non_2x/couple-love-young-fitness-man-and-women-workout-exercise-together-weight-training-and-cardio-program-concept-free-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Stat {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+}
+
+.statdiv {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 0px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+
+    color: black;
+    /* background-image: linear-gradient(326deg, #09C6F9 0%, #045DE9 74%); */
+
+}
+
+.statbox1 {
+    width: 170px;
+    height: 170px;
+    border-radius: 1rem;
+
+    background-color: rgba(255, 255, 255, 0.678);
+    backdrop-filter: blur(5px);
+
+    align-self: flex-start;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+    transition: all .3s ease;
+    font-size: 28px;
+}
+
+.statbox1 small {
+    width: 100%;
+    text-align: center;
+}
+
+.statbox1:hover,
+.statbox2:hover,
+.statbox3:hover,
+.statbox4:hover {
+    scale: 1.05;
+}
+
+.statbox2 {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.678);
+    backdrop-filter: blur(5px);
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+    transition: all .3s ease;
+    font-size: 28px;
+}
+
+.statbox3 {
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.678);
+    backdrop-filter: blur(5px);
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+    transition: all .3s ease;
+    font-size: 22px;
+}
+
+.statbox4 {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.678);
+    backdrop-filter: blur(5px);
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+    transition: all .3s ease;
+    font-size: 17px;
+}
+
+.photodiv {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid black; */
+
+    padding: 20px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.statresetBTN {
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    padding: 0px 10px;
+    border-radius: .5rem;
+    background-color: white;
+    color: black;
+    border: none;
+    transition: all .3s ease;
+    font-weight: bold;
+    font-size: 20px;
+
+    background-color: #FB8085;
+    background-image: linear-gradient(326deg, #FB8085
+    0%, #F9C1B1 74%);
+
+}
+
+.statresetBTN:hover {
+    color: white;
+}
+
+/* ----------------- VİDEO */
+
+.videocontainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    filter: grayscale(200%);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ----------------- STAT ADD */
+
+.mystatadd {
+    width: 50%;
+    height: 80%;
+    /* border: 3px solid black; */
+    border-radius: 1rem;
+    overflow: auto;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+    gap: 30px;
+}
+
+.mystatadd::-webkit-scrollbar {
+    display: none;
+}
+
+.mystatadd h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.statAddSelect {
+    width: 50%;
+    height: 50px;
+    border-radius: .5rem;
+    padding-left: 10px;
+}
+
+.statAddINP {
+    width: 50%;
+    height: 50px;
+    border-radius: .5rem;
+    padding-left: 10px;
+}
+
+.statAddBTN {
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    border-radius: .5rem;
+    padding-left: 10px;
+    border: none;
+    transition: all .3s ease;
+}
+
+.statAddBTN:hover {
+    background-color: black;
+    color: white;
+}
