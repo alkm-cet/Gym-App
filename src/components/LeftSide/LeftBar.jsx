@@ -32,7 +32,7 @@ function LeftBar() {
               <span className="material-symbols-outlined" style={{ textDecoration: 'none' }}>
                 home
               </span>
-              <p  >Home</p>
+              <p>Home</p>
             </div>
           </Link>
 

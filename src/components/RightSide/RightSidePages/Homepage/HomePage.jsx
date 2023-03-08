@@ -115,7 +115,7 @@ function HomePage() {
               <div className="titleboxes">USERNAME</div>
               <div className="titleboxes">AREA</div>
               <div className="titleboxes">DURATION</div>
-              <div className="titleboxes">CALORI</div>
+              <div className="titleboxes">CALORIE</div>
               <div className="titleboxes">DATE</div>
             </div>
             {

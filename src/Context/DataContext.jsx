@@ -90,9 +90,6 @@ function DataContextProvider({ children }) {
         }
     }
 
-    useEffect(() => {
-        querySnapshot();
-    }, [])
 
     // ---------------------------------Exersiz Ekleme
 

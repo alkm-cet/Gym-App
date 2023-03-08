@@ -18,9 +18,7 @@
 .Stat {
     width: 100%;
     height: 100%;
-
     display: flex;
-
 }
 
 .statdiv {
@@ -28,6 +26,7 @@
     height: 100%;
     /* border: 1px solid black; */
     padding: 0px 10px;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -36,8 +35,14 @@
 
     color: black;
     /* background-image: linear-gradient(326deg, #09C6F9 0%, #045DE9 74%); */
-
 }
+
+@media(max-width:768px) {
+    .statdiv {
+        width: 100%;
+    }
+}
+
 
 .statbox1 {
     width: 170px;
@@ -60,6 +65,8 @@
     transition: all .3s ease;
     font-size: 28px;
 }
+
+
 
 .statbox1 small {
     width: 100%;
@@ -143,6 +150,12 @@
     background-repeat: no-repeat;
 }
 
+@media(max-width:768px) {
+    .photodiv {
+        display: none;
+    }
+}
+
 .statresetBTN {
     cursor: pointer;
     width: 160px;
@@ -157,8 +170,7 @@
     font-size: 20px;
 
     background-color: #FB8085;
-    background-image: linear-gradient(326deg, #FB8085
-    0%, #F9C1B1 74%);
+    background-image: linear-gradient(326deg, #FB8085 0%, #F9C1B1 74%);
 
 }
 
@@ -192,7 +204,7 @@ video {
 .mystatadd {
     width: 50%;
     height: 80%;
-    /* border: 3px solid black; */
+    border: 3px solid black;
     border-radius: 1rem;
     overflow: auto;
 
@@ -207,6 +219,13 @@ video {
     gap: 30px;
 }
 
+@media(max-width:768px) {
+    .mystatadd {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .mystatadd::-webkit-scrollbar {
     display: none;
 }
@@ -217,6 +236,12 @@ video {
     font-size: 50px;
 }
 
+@media(max-width:768px) {
+    .mystatadd h1 {
+        font-size: 25px;
+    }
+}
+
 .statAddSelect {
     width: 50%;
     height: 50px;
@@ -224,11 +249,24 @@ video {
     padding-left: 10px;
 }
 
+@media(max-width:768px) {
+    .statAddSelect {
+        width: 80%;
+    }
+}
+
+
 .statAddINP {
     width: 50%;
     height: 50px;
     border-radius: .5rem;
     padding-left: 10px;
+}
+
+@media(max-width:768px) {
+    .statAddINP {
+        width: 80%;
+    }
 }
 
 .statAddBTN {
@@ -239,6 +277,12 @@ video {
     padding-left: 10px;
     border: none;
     transition: all .3s ease;
+}
+
+@media(max-width:768px) {
+    .statAddBTN {
+        width: 80%;
+    }
 }
 
 .statAddBTN:hover {
